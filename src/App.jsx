@@ -4,7 +4,7 @@ class App extends Component {
   render() {
     return (
       <div>
-        <h1 id="header">Star Wars UwU</h1>
+        <h1 data-cy="header" >Star Wars UwU</h1>
       </div>
     )
   }
