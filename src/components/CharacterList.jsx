@@ -10,11 +10,12 @@ class CharacterList extends Component {
     this.getCharacters()
   }
 
+
   getCharacters = async () => {
     let characterData = await axios.get("https://swapi.dev/api/people/")
       this.setState({ characters: characterData.data.results})
   }
-
+  
   render() {
     let characterList = this.state.characters.slice(0, 6).map(character => {
       return (
